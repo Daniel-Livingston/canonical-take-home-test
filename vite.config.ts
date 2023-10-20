@@ -10,5 +10,8 @@ export default defineConfig({
 				additionalData: '@use "src/variables.scss" as *;'
 			}
 		}
+	},
+	preview: {
+		port: 3000
 	}
 });
