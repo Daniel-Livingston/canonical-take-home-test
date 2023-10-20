@@ -12,7 +12,7 @@ export const load: PageLoad = async ({ fetch }) => {
 			id: post.id,
 			title: post.title.rendered,
 			url: post.link,
-			date: post.date,
+			date: getDate(post.date),
 			img: {
 				src: post.featured_media,
 				alt: ''
@@ -41,4 +41,14 @@ const getHeaderTexts = (posts: Post[]) => {
 	});
 
 	return headerTexts;
+};
+
+const getDate = (date: string) => {
+	const dateParts = new Intl.DateTimeFormat('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric'
+	}).formatToParts(new Date(date));
+
+	return `${dateParts[2].value} ${dateParts[0].value} ${dateParts[4].value}`;
 };
