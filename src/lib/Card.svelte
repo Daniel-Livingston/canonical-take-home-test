@@ -46,7 +46,7 @@
 	}
 
 	.p-card__content {
-		border-top: 1px dotted $color-mid-light;
+		border-top: 1px dotted $color-mid-dark;
 		margin: 0 $spv--small;
 		padding: $spv--large $spv--medium;
 	}
@@ -56,7 +56,7 @@
 	}
 
 	.c-p-card__footer {
-		border-top: 1px dotted $color-mid-light;
+		border-top: 1px dotted $color-mid-dark;
 		margin: auto $spv--small 0;
 		padding: $spv--large $spv--small;
 	}
