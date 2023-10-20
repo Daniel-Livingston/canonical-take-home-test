@@ -12,3 +12,9 @@
 		</div>
 	{/each}
 </div>
+
+<style lang="scss">
+	.col-4 {
+		margin-bottom: $spv--large;
+	}
+</style>

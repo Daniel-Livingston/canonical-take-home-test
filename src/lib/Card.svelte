@@ -59,5 +59,6 @@
 		border-top: 1px dotted $color-mid-dark;
 		margin: auto $spv--small 0;
 		padding: $spv--large $spv--small;
+		max-width: none;
 	}
 </style>
